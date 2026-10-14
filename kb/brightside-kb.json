@@ -1,0 +1,487 @@
+{
+  "business": {
+    "name": "Brightside Dental",
+    "note": "Fictional business created for a portfolio demo. Not a real dental practice.",
+    "city": "Austin, TX",
+    "phone": "(512) 555-0142",
+    "email": "hello@brightsidedental.example",
+    "address": "2140 South Lamar Blvd, Suite 200, Austin, TX 78704"
+  },
+  "docs": [
+    {
+      "id": "hours",
+      "title": "Office hours",
+      "tags": [
+        "hours",
+        "open",
+        "close",
+        "saturday",
+        "sunday",
+        "weekend",
+        "time"
+      ],
+      "text": "Brightside Dental is open Monday to Thursday 7:30 AM to 5:00 PM, Friday 7:30 AM to 2:00 PM, and every second and fourth Saturday 8:00 AM to 1:00 PM. We are closed on Sundays and major US holidays (New Year's Day, Memorial Day, July 4th, Labor Day, Thanksgiving and the day after, Christmas Eve and Christmas Day)."
+    },
+    {
+      "id": "location",
+      "title": "Location and parking",
+      "tags": [
+        "address",
+        "location",
+        "parking",
+        "directions",
+        "where",
+        "bus"
+      ],
+      "text": "We are at 2140 South Lamar Blvd, Suite 200, Austin, TX 78704, on the second floor above Lamar Coffee Co. Free covered parking is in the garage behind the building (levels 2-3, validated at the front desk). CapMetro bus route 803 stops at South Lamar & Oltorf, a 3-minute walk. The building has an elevator and is wheelchair accessible."
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "tags": [
+        "phone",
+        "call",
+        "email",
+        "text",
+        "contact",
+        "reach"
+      ],
+      "text": "Call or text (512) 555-0142 during office hours, or email hello@brightsidedental.example. Messages are answered within one business day. For dental emergencies outside office hours, call the same number and press 2 for the on-call dentist."
+    },
+    {
+      "id": "svc-cleaning",
+      "title": "Cleanings and exams",
+      "tags": [
+        "cleaning",
+        "checkup",
+        "exam",
+        "x-ray",
+        "hygiene",
+        "price",
+        "cost"
+      ],
+      "text": "Routine adult cleaning and exam with bite-wing X-rays: $150-$220 without insurance. Child cleaning (under 13): $95-$140. Deep cleaning (scaling and root planing): $200-$350 per quadrant. Most PPO plans cover two cleanings per year at 100%."
+    },
+    {
+      "id": "svc-fillings",
+      "title": "Fillings",
+      "tags": [
+        "filling",
+        "cavity",
+        "composite",
+        "tooth-colored",
+        "price",
+        "cost"
+      ],
+      "text": "Tooth-colored (composite) fillings: $150-$300 per tooth depending on size and surfaces. We do not place silver amalgam fillings."
+    },
+    {
+      "id": "svc-rootcanal",
+      "title": "Root canals and crowns",
+      "tags": [
+        "root canal",
+        "crown",
+        "cap",
+        "endodontic",
+        "price",
+        "cost"
+      ],
+      "text": "Root canal: $900-$1,400 for front teeth, $1,100-$1,600 for molars. Porcelain crown: $1,100-$1,500, usually done in two visits about two weeks apart. Same-day crowns are available for some cases for an extra $150."
+    },
+    {
+      "id": "svc-whitening",
+      "title": "Teeth whitening",
+      "tags": [
+        "whitening",
+        "bleach",
+        "white",
+        "cosmetic",
+        "price",
+        "cost"
+      ],
+      "text": "In-office whitening (about 90 minutes): $450. Custom take-home whitening trays with gel: $295. Whitening is cosmetic and is not covered by insurance."
+    },
+    {
+      "id": "svc-invisalign",
+      "title": "Clear aligners (Invisalign)",
+      "tags": [
+        "invisalign",
+        "aligners",
+        "braces",
+        "straighten",
+        "orthodontic",
+        "price",
+        "cost"
+      ],
+      "text": "Clear aligner treatment: $3,800-$6,000 depending on complexity, including a free consultation and 3D scan. Monthly payment plans are available (see Payment plans)."
+    },
+    {
+      "id": "svc-implants",
+      "title": "Implants and extractions",
+      "tags": [
+        "implant",
+        "extraction",
+        "pull",
+        "wisdom",
+        "tooth removal",
+        "price",
+        "cost"
+      ],
+      "text": "Simple extraction: $150-$300. Surgical or wisdom tooth extraction: $300-$650 per tooth. Single dental implant with crown: $3,500-$4,800, completed over 3-6 months. Nitrous oxide (laughing gas) is available for $75 per visit."
+    },
+    {
+      "id": "svc-kids",
+      "title": "Children's dentistry",
+      "tags": [
+        "kids",
+        "children",
+        "child",
+        "pediatric",
+        "baby",
+        "sealants"
+      ],
+      "text": "We see children from age 2. Sealants: $45-$60 per tooth. Fluoride treatment: $35. Parents are welcome in the treatment room."
+    },
+    {
+      "id": "insurance",
+      "title": "Insurance accepted",
+      "tags": [
+        "insurance",
+        "ppo",
+        "delta",
+        "cigna",
+        "aetna",
+        "metlife",
+        "guardian",
+        "united",
+        "medicaid",
+        "chip",
+        "hmo",
+        "coverage",
+        "in-network"
+      ],
+      "text": "We are in-network with Delta Dental PPO, Cigna DPPO, Aetna PPO, MetLife PDP, Guardian PPO, United Concordia, and Blue Cross Blue Shield of Texas dental PPO. We do not accept DMO/HMO plans, Texas Medicaid, or CHIP at this time. Out-of-network PPO plans: we file the claim for you and you pay the difference. We verify benefits before your first visit if you send your insurance details 48 hours ahead."
+    },
+    {
+      "id": "no-insurance",
+      "title": "No insurance / membership plan",
+      "tags": [
+        "uninsured",
+        "no insurance",
+        "membership",
+        "discount",
+        "plan",
+        "savings"
+      ],
+      "text": "No insurance? Our Brightside Membership Plan is $29/month or $299/year for adults ($19/month for kids). It covers two cleanings, exams, X-rays, and one emergency exam per year, plus 20% off all other treatment."
+    },
+    {
+      "id": "new-patient",
+      "title": "New patient process",
+      "tags": [
+        "new patient",
+        "first visit",
+        "forms",
+        "paperwork",
+        "register",
+        "book",
+        "appointment",
+        "schedule"
+      ],
+      "text": "New patients can book online at brightsidedental.example/book or by phone. Before your first visit we text you a secure link to intake forms (medical history, insurance, consent), which take about 10 minutes. Please arrive 10 minutes early with a photo ID and insurance card. The first visit lasts about 75 minutes: exam, full X-rays, cleaning if time allows, and a treatment plan with cost estimates. New-patient exam special for patients without insurance: $129."
+    },
+    {
+      "id": "booking",
+      "title": "Booking and rescheduling",
+      "tags": [
+        "book",
+        "appointment",
+        "schedule",
+        "reschedule",
+        "availability",
+        "slot",
+        "move"
+      ],
+      "text": "Appointments can be booked or moved online, by phone, or by text. The AI assistant cannot confirm a specific time slot itself; it collects your preferred days and times and a team member confirms by text within 2 business hours."
+    },
+    {
+      "id": "cancellation",
+      "title": "Cancellation policy",
+      "tags": [
+        "cancel",
+        "cancellation",
+        "no-show",
+        "late",
+        "fee",
+        "missed"
+      ],
+      "text": "Please give at least 24 hours' notice to cancel or reschedule. Late cancellations (under 24 hours) or no-shows are charged $50; the first one is waived. Arriving more than 15 minutes late may require rescheduling. Three no-shows within 12 months may require a prepaid deposit for future bookings."
+    },
+    {
+      "id": "emergency",
+      "title": "Dental emergencies",
+      "tags": [
+        "emergency",
+        "urgent",
+        "pain",
+        "swelling",
+        "bleeding",
+        "knocked out",
+        "broken",
+        "abscess",
+        "toothache",
+        "after hours"
+      ],
+      "text": "We keep same-day emergency slots every weekday. Emergency exam: $95 (free for Membership Plan patients once per year). After hours, call (512) 555-0142 and press 2 for the on-call dentist. If a permanent tooth is knocked out, keep it moist in milk and come in within 60 minutes. Go to the ER or call 911 for facial swelling that affects breathing or swallowing, uncontrolled bleeding, a high fever with dental swelling, or jaw trauma after an accident."
+    },
+    {
+      "id": "payment",
+      "title": "Payment methods",
+      "tags": [
+        "pay",
+        "payment",
+        "card",
+        "cash",
+        "hsa",
+        "fsa",
+        "apple pay",
+        "billing",
+        "bill"
+      ],
+      "text": "We accept Visa, Mastercard, American Express, Discover, Apple Pay, Google Pay, HSA/FSA cards, and cash. Payment for your estimated portion is due at the time of service. We do not accept personal checks."
+    },
+    {
+      "id": "payment-plans",
+      "title": "Payment plans and financing",
+      "tags": [
+        "payment plan",
+        "financing",
+        "monthly",
+        "installments",
+        "carecredit",
+        "sunbit",
+        "afford"
+      ],
+      "text": "For treatment over $500 we offer in-house payment plans: 3 months interest-free with 30% down. Third-party financing is available through CareCredit and Sunbit, with 6-12 month 0% promotional options for approved applicants. Ask the front desk for a written estimate first."
+    },
+    {
+      "id": "billing",
+      "title": "Billing questions and statements",
+      "tags": [
+        "bill",
+        "statement",
+        "charge",
+        "invoice",
+        "refund",
+        "overcharged",
+        "balance",
+        "claim"
+      ],
+      "text": "Statements are emailed monthly after insurance processes your claim. If your balance looks wrong, our billing coordinator (Maria) reviews it within 2 business days. Refunds for overpayments are issued to the original payment method within 10 business days. The assistant cannot see or change account balances."
+    },
+    {
+      "id": "anxiety",
+      "title": "Dental anxiety and sedation",
+      "tags": [
+        "anxiety",
+        "nervous",
+        "scared",
+        "fear",
+        "sedation",
+        "laughing gas",
+        "nitrous"
+      ],
+      "text": "Nervous patients are very welcome. We offer noise-cancelling headphones, ceiling TVs, weighted blankets, and nitrous oxide ($75). Oral sedation is available for longer procedures with a pre-visit consult. Tell us when booking and we'll schedule extra time."
+    },
+    {
+      "id": "covid-hygiene",
+      "title": "Sterilization and safety",
+      "tags": [
+        "safety",
+        "sterilization",
+        "clean",
+        "hygiene",
+        "infection",
+        "covid"
+      ],
+      "text": "All instruments are heat-sterilized and tracked per patient. Treatment rooms are disinfected between every patient and we use hospital-grade air filtration."
+    },
+    {
+      "id": "languages",
+      "title": "Languages",
+      "tags": [
+        "spanish",
+        "language",
+        "espanol",
+        "translator",
+        "interpreter"
+      ],
+      "text": "Our team speaks English and Spanish (se habla espa\u00f1ol). Interpreters for other languages can be arranged with 48 hours' notice at no cost."
+    },
+    {
+      "id": "team",
+      "title": "Our dentists",
+      "tags": [
+        "dentist",
+        "doctor",
+        "team",
+        "who",
+        "staff"
+      ],
+      "text": "Dr. Elena Ruiz, DDS (general and cosmetic dentistry) and Dr. Marcus Chen, DMD (implants, root canals, and oral surgery). Our hygienists are Priya and Jordan."
+    },
+    {
+      "id": "records",
+      "title": "Records and X-ray transfers",
+      "tags": [
+        "records",
+        "x-rays",
+        "transfer",
+        "previous dentist",
+        "copy"
+      ],
+      "text": "We can request your X-rays and records from your previous dentist with a signed release (included in the intake forms). Copies of your own records are free when sent electronically."
+    },
+    {
+      "id": "complaints",
+      "title": "Feedback and complaints",
+      "tags": [
+        "complaint",
+        "unhappy",
+        "manager",
+        "feedback",
+        "bad experience",
+        "rude",
+        "angry"
+      ],
+      "text": "We take complaints seriously. Our practice manager, Dana Brooks, personally reviews every complaint and responds within one business day. Patients can also email feedback@brightsidedental.example."
+    }
+  ],
+  "faqs": [
+    {
+      "id": "faq-1",
+      "q": "Are you open on Saturdays?",
+      "a": "Yes, every second and fourth Saturday from 8:00 AM to 1:00 PM."
+    },
+    {
+      "id": "faq-2",
+      "q": "Do you take walk-ins?",
+      "a": "We prefer appointments, but we keep same-day slots for emergencies every weekday. Call ahead so we can fit you in."
+    },
+    {
+      "id": "faq-3",
+      "q": "Is parking free?",
+      "a": "Yes. Free covered parking is in the garage behind the building on levels 2-3; we validate at the front desk."
+    },
+    {
+      "id": "faq-4",
+      "q": "Do you accept Delta Dental?",
+      "a": "Yes, we are in-network with Delta Dental PPO. We do not accept Delta Dental DMO/HMO plans."
+    },
+    {
+      "id": "faq-5",
+      "q": "Do you accept Medicaid or CHIP?",
+      "a": "Not at this time. Our Brightside Membership Plan ($29/month for adults) is an affordable alternative."
+    },
+    {
+      "id": "faq-6",
+      "q": "How much is a cleaning without insurance?",
+      "a": "An adult cleaning and exam with bite-wing X-rays is $150-$220 without insurance, or included in the Membership Plan."
+    },
+    {
+      "id": "faq-7",
+      "q": "How much does whitening cost?",
+      "a": "In-office whitening is $450; custom take-home trays are $295. Whitening is not covered by insurance."
+    },
+    {
+      "id": "faq-8",
+      "q": "How much is Invisalign?",
+      "a": "Clear aligner treatment is $3,800-$6,000, with a free consultation and 3D scan. Monthly plans are available."
+    },
+    {
+      "id": "faq-9",
+      "q": "How much is a root canal?",
+      "a": "$900-$1,400 for front teeth and $1,100-$1,600 for molars. A crown is often needed afterwards ($1,100-$1,500)."
+    },
+    {
+      "id": "faq-10",
+      "q": "How much is a dental implant?",
+      "a": "A single implant with crown is $3,500-$4,800, completed over 3-6 months."
+    },
+    {
+      "id": "faq-11",
+      "q": "Do you offer payment plans?",
+      "a": "Yes. Treatment over $500 can be split over 3 months interest-free with 30% down, or financed through CareCredit or Sunbit."
+    },
+    {
+      "id": "faq-12",
+      "q": "Can I use my HSA or FSA card?",
+      "a": "Yes, HSA and FSA cards are accepted."
+    },
+    {
+      "id": "faq-13",
+      "q": "What do I need to bring to my first visit?",
+      "a": "A photo ID and your insurance card. Complete the intake forms we text you beforehand and arrive 10 minutes early."
+    },
+    {
+      "id": "faq-14",
+      "q": "How long is the first appointment?",
+      "a": "About 75 minutes: exam, full X-rays, cleaning if time allows, and a treatment plan with cost estimates."
+    },
+    {
+      "id": "faq-15",
+      "q": "What is your cancellation policy?",
+      "a": "Please give 24 hours' notice. Late cancellations or no-shows are $50, and the first one is waived."
+    },
+    {
+      "id": "faq-16",
+      "q": "What should I do if my tooth is knocked out?",
+      "a": "Keep the tooth moist in milk, avoid touching the root, and come in within 60 minutes. Call (512) 555-0142 (press 2 after hours)."
+    },
+    {
+      "id": "faq-17",
+      "q": "I have a bad toothache, can I be seen today?",
+      "a": "We keep same-day emergency slots every weekday. The emergency exam is $95. Call (512) 555-0142 to grab a slot."
+    },
+    {
+      "id": "faq-18",
+      "q": "When should I go to the ER instead?",
+      "a": "Go to the ER or call 911 for facial swelling that affects breathing or swallowing, uncontrolled bleeding, high fever with dental swelling, or jaw trauma."
+    },
+    {
+      "id": "faq-19",
+      "q": "At what age should my child first visit?",
+      "a": "We see children from age 2. Parents are welcome in the treatment room."
+    },
+    {
+      "id": "faq-20",
+      "q": "Do you offer sedation for nervous patients?",
+      "a": "Yes: nitrous oxide ($75), noise-cancelling headphones, weighted blankets, and oral sedation for longer procedures after a consult."
+    },
+    {
+      "id": "faq-21",
+      "q": "Do you speak Spanish?",
+      "a": "Yes, se habla espa\u00f1ol. Interpreters for other languages can be arranged with 48 hours' notice at no cost."
+    },
+    {
+      "id": "faq-22",
+      "q": "Can you transfer my X-rays from my old dentist?",
+      "a": "Yes, with a signed release that is included in the intake forms."
+    },
+    {
+      "id": "faq-23",
+      "q": "I think my bill is wrong. Who do I talk to?",
+      "a": "Our billing coordinator reviews disputed balances within 2 business days. Refunds go to the original payment method within 10 business days."
+    },
+    {
+      "id": "faq-24",
+      "q": "Do you do same-day crowns?",
+      "a": "For some cases, yes, for an extra $150. Most crowns take two visits about two weeks apart."
+    },
+    {
+      "id": "faq-25",
+      "q": "Is the office wheelchair accessible?",
+      "a": "Yes. The building has an elevator and step-free access to Suite 200."
+    }
+  ]
+}
