@@ -1,0 +1,7 @@
+{
+  "name": "support-agent-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "AI support agent demo (Brightside Dental) - static frontend + one Vercel serverless function calling Gemini Flash-Lite.",
+  "license": "MIT"
+}
