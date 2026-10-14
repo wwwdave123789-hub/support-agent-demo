@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ask Brightside - AI Support Agent Demo by David Divine</title>
+  <meta name="description" content="A working AI support agent for a small business: answers FAQs from the company's own docs, detects intent and urgency, and hands complaints, emergencies and bookings to staff with a drafted reply." />
+  <meta property="og:title" content="AI Support Agent Demo - Brightside Dental" />
+  <meta property="og:description" content="Auto-answers routine questions, routes the rest to staff with a drafted reply. Built by David Divine, AI Agent Engineer." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦷</text></svg>" />
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <div class="byline">
+        <strong>Demo by David Divine</strong> <span class="sep">-</span> AI Agent Engineer
+      </div>
+      <nav class="links">
+        <a href="https://github.com/wwwdave123789-hub" target="_blank" rel="noopener">GitHub</a>
+        <a href="mailto:www.dave123789@gmail.com?subject=AI%20support%20agent%20pilot">Email me</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero wrap">
+    <div>
+      <p class="eyebrow">Live demo · fictional business</p>
+      <h1>An AI support agent that knows when <em>not</em> to answer.</h1>
+      <p class="lede">"Brightside Dental" (Austin, TX) is a made-up practice. Its agent answers routine questions from the practice's own docs, and routes emergencies, complaints, billing disputes and bookings to a human with a reply already drafted. Watch its reasoning in the “Behind the scenes” panel.</p>
+    </div>
+    <div class="cta-card">
+      <p class="cta-title">Want this for your business?</p>
+      <p class="cta-sub">2-week pilot, one workflow.</p>
+      <a class="btn" href="mailto:www.dave123789@gmail.com?subject=2-week%20AI%20support%20pilot">Book a pilot</a>
+    </div>
+  </section>
+
+  <main class="wrap grid">
+    <!-- Chat -->
+    <section class="card chat" aria-label="Ask Brightside chat">
+      <div class="chat-head">
+        <div class="brand">
+          <div class="logo" aria-hidden="true">🦷</div>
+          <div>
+            <div class="brand-name">Ask Brightside</div>
+            <div class="brand-sub">Brightside Dental · Austin, TX</div>
+          </div>
+        </div>
+        <span id="modeBadge" class="badge badge-wait" title="Checking AI status">checking…</span>
+      </div>
+
+      <div id="messages" class="messages" aria-live="polite">
+        <div class="msg bot">
+          <div class="bubble">Hi! I'm Brightside Dental's assistant. Ask me about hours, prices, insurance, appointments, or a dental problem.</div>
+        </div>
+      </div>
+
+      <div class="chips" id="chips">
+        <button class="chip" data-q="Do you take Delta Dental insurance?">Do you take Delta Dental?</button>
+        <button class="chip chip-alert" data-q="My son's front tooth got knocked out at basketball and it's bleeding. What do we do?">🚨 Knocked-out tooth</button>
+        <button class="chip chip-angry" data-q="This is ridiculous!! I waited 45 minutes, nobody apologized, and now I got a $50 late fee. Worst dentist in Austin.">😡 Angry complaint</button>
+        <button class="chip" data-q="Can I book a cleaning next Tuesday afternoon? I'm a new patient.">Book a cleaning</button>
+        <button class="chip" data-q="How much is teeth whitening, and do you have payment plans?">Whitening price + payment plans</button>
+      </div>
+
+      <form id="form" class="composer" autocomplete="off">
+        <label for="input" class="sr-only">Your message</label>
+        <textarea id="input" rows="1" maxlength="500" placeholder="Ask Brightside anything…" required></textarea>
+        <button id="send" class="send" type="submit" aria-label="Send">➤</button>
+      </form>
+      <div class="composer-meta"><span id="charCount">0/500</span><span id="quota"></span></div>
+    </section>
+
+    <!-- Behind the scenes -->
+    <aside class="side">
+      <section class="card stats">
+        <div class="stat">
+          <div class="stat-num" id="minutesSaved">0</div>
+          <div class="stat-label">Est. staff minutes saved<br /><span class="muted">3 min per auto-answered message</span></div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="autoCount">0</div>
+          <div class="stat-label">Auto-answered</div>
+        </div>
+        <div class="stat">
+          <div class="stat-num" id="handoffCount">0</div>
+          <div class="stat-label">Handed off</div>
+        </div>
+      </section>
+
+      <section class="card bts">
+        <div class="card-head">
+          <h2>Behind the scenes</h2>
+          <span class="muted small">newest first</span>
+        </div>
+        <div id="trace" class="trace">
+          <p class="empty">Send a message (or tap a suggestion) to see what the agent detected, which knowledge-base snippets it used, and whether it answered or escalated.</p>
+        </div>
+      </section>
+
+      <section class="card inbox">
+        <div class="card-head">
+          <h2>Staff inbox <span id="inboxCount" class="pill">0</span></h2>
+          <button id="reset" class="link-btn" type="button">Reset demo</button>
+        </div>
+        <ul id="inboxList" class="inbox-list">
+          <li class="empty">No handed-off tickets yet.</li>
+        </ul>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="wrap footer">
+    <p><strong>How it works:</strong> keyword (BM25) retrieval over the practice's knowledge base → an LLM (Groq gpt-oss or Gemini Flash-Lite) with strict JSON output (reply, intent, urgency, handoff, staff draft, sources) → guardrails (on-topic only, 500-char limit, session cap). If the AI key is unavailable it falls back to a deterministic rules engine, labelled "offline demo mode". No database, no tracking; the staff inbox lives in your browser.</p>
+    <p class="muted">Brightside Dental, its staff, address and phone number are fictional. Not medical advice. © David Divine · <a href="https://github.com/wwwdave123789-hub" target="_blank" rel="noopener">github.com/wwwdave123789-hub</a></p>
+  </footer>
+
+  <script src="/engine.js"></script>
+  <script src="/app.js"></script>
+</body>
+</html>
